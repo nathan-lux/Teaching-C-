@@ -1,7 +1,6 @@
 # Teaching C#
 
-A self-paced C# curriculum built for one specific goal: get someone with **zero coding
-experience** to the point where they can open a Unity tutorial and follow along without
+A self-paced C# curriculum built for one specific goal: get someone with no operational coding experience to the point where they can open a Unity tutorial and follow along without
 being lost.
 
 This started as live-lecture scratch notes for teaching a friend 1:1, and is now public
