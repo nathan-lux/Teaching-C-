@@ -31,12 +31,14 @@ Car:
 - Crash
 
 class Car {
+    # attributes of a car
     int year;
     string make;
     string model;
     top_speed float;
     string color;
 
+    # things cars can do
     Drive(){
 
     }
@@ -48,10 +50,22 @@ class Car {
     Crash(){
 
     }
+
+    # how to relate cars to other cars
+    # write overload for == 
+    overload ==(Car1, Car2){
+        // is Car1.year == Car2.year
+    }
 }
 
 Car ToyotaCamry = new Car
 Car FordF150 = new Car
+
+if (ToyotaCamry == FordF150){
+
+}
+
+WriteLine("Hello world");
 
 // pseudocode
 Car Instance ToyotaCamry {
@@ -88,3 +102,16 @@ class List{
 List<int> my_list = new List<int>();
 my_list.length
 my_list.Add(1)
+
+
+static void Main()
+{
+    AddTwoNumbers(10, 2)     -> Go find function AddTwoNumbers and give it x and y
+}
+
+
+public static int AddTwoNumbers(a, b)
+{
+    int c = a + b
+    return c
+}

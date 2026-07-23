@@ -4,7 +4,10 @@ class Conditions
 {
     static void Main()
     {
-        // Intro to boolean logic and boolean operators
+        // #################################### //
+        //         Boolean Operations           //
+        // #################################### //        
+        
         Console.WriteLine(!true);   // <- The ! is the "not" or negation operator
 
         int a = 1;
@@ -93,6 +96,30 @@ class Conditions
         // if none get met, it will end in the last else, then continue executing code top 
         // to bottom
 
+        // #################################### //
+        //            Switch Cases              //
+        // #################################### // 
+        string role = "Admin";
+
+        // if statement logic
+        // if (role == "User")
+        // {
+        //     Console.WriteLine("Access Denied");
+        //     // execute other code here
+        // }
+
+        switch (role) // <-- the variable to compare each case to
+        {
+            case "Admin": // <-- checks if role is "Admin"
+                Console.WriteLine("Permission Granted");
+                break;
+            case "User": // <-- checks if role is "User"
+                Console.WriteLine("Access Denied");
+                break;
+            case "Super User": // <-- checks if role is "Super User"
+                Console.WriteLine("Get temp perm from admin");
+                break;
+        }
     }
 }
 

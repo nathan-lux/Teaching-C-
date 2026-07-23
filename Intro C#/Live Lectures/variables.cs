@@ -17,9 +17,8 @@ class Variables
         var speed_subtraction = 2;      // is using 'var' but it is best to avoid this early
         var damage = 'b';               // in favor of keeping your code explicit and readable
 
-
         // game logic stuff goes here
-        Console.WriteLine(speed);
+        Console.WriteLine("Speed before deductino: " + speed + "\t" + speed_subtraction);
 
         // printing variables uncomment to see console output
         // Console.WriteLine(char_name);
@@ -30,14 +29,29 @@ class Variables
         // reassigning a variable value does not require the type statement since
         // the variable is already instantiated in Main()
         speed = speed - speed_subtraction;
-        Console.WriteLine(speed);
+        Console.WriteLine("Speed after deduction: " + speed);
 
         // have not killed boss
-        Console.WriteLine(has_killed_boss);
+        Console.WriteLine("Has the player killed the boss? " + has_killed_boss);
         // you kill the boss
         has_killed_boss = true;
-        Console.WriteLine(has_killed_boss);
+        Console.WriteLine("What about now? " + has_killed_boss);
 
+        // defining multiple variables of the same name
+        // DECLARATION          -> int speed;
+        // ASSIGNMENT           -> speed = 10;
+
+        // cannot declare two variables of the same name
+        // int speed = 10;
+        // string speed = "speed";
+
+        // Strings
+        Console.WriteLine("Current Speed " + speed);
+
+        // Quick mafs
+        speed = speed - speed_subtraction;
+        speed -= speed_subtraction;
+        speed += speed_subtraction;
     }
 }
 
