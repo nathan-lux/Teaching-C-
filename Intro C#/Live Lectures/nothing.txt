@@ -106,12 +106,31 @@ my_list.Add(1)
 
 static void Main()
 {
-    AddTwoNumbers(10, 2)     -> Go find function AddTwoNumbers and give it x and y
+    int x = 10;
+    int y = 2;
+    Console.WriteLine(x);
+    int z = AddTwoNumbers(x, y)     -> Go find function AddTwoNumbers and give it x and y
 }
 
 
-public static int AddTwoNumbers(a, b)
+public static int AddTwoNumbers(int a, int b)
 {
-    int c = a + b
-    return c
+    int c = a + b;
+    return c;
 }
+
+
+Memory relevant to Main
+______
+|  10  | <--- physical location of int x
+|   2  | <--- physical location of int y
+|  12  | <--- physical location of int z
+------
+
+Memory relevant to AddTwoNumbers
+______
+|  10  | <--- copy of x, its called a inside AddTwoNumbers 
+|   2  | <--- copy of y, its called b inside AddTwoNumbers
+|  12  | <--- a + b only inside AddTwoNumbers
+------
+

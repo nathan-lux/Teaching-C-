@@ -20,6 +20,8 @@ cleaned-up final answer.
 | [conditionals.cs](conditionals.cs) | `if`/`else if`/`else`, boolean logic, `&&` / `||` / `!` |
 | [arrays.cs](arrays.cs) | Fixed-size arrays, multi-dimensional arrays |
 | [lists.cs](lists.cs) | `List<T>`, `Add`/`Remove`/`AddRange`, a first taste of generics |
+| [loops.cs](loops.cs) | For loops and for each loops (while later)|
+| [functions.cs](functions.cs) | Basic function declaration, return types and examples: [function_example.cs](function_example.cs)|
 
 More topics (loops, methods, classes/OOP, and the eventual jump into Unity-specific
 concepts) are being added as the lessons progress.
