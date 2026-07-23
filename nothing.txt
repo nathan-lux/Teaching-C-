@@ -1,0 +1,88 @@
+System
+{
+    Object1
+    Object2
+    Object3{
+        Sub_object1
+    }
+}
+
+System.Object3.Sub_object1
+
+PlayerCharacter.Get_health()
+PlayerCharacter.Get_weapon().ammo
+
+
+Classes:
+
+Car:
+# things cars have
+- year
+- make
+- model
+- top speed
+- color
+
+# things cars can do
+- Drive
+- Brake
+- Crash
+
+class Car {
+    int year;
+    string make;
+    string model;
+    top_speed float;
+    string color;
+
+    Drive(){
+
+    }
+
+    Brake(){
+
+    }
+
+    Crash(){
+
+    }
+}
+
+Car ToyotaCamry = new Car
+Car FordF150 = new Car
+
+// pseudocode
+Car Instance ToyotaCamry {
+    int year = 1996;
+    string make = Camry;
+    string model= Camry;
+    top_speed float= 100 bird/hr;
+    string color = blue;
+
+    Drive(){
+        // drive the car
+    }
+
+    Brake(){
+
+    }
+
+    Crash(){
+
+    }
+}
+
+Console.WriteLine(ToyotaCamry.year) == 1996
+
+Console.WriteLine(FordF150.year) == 1979
+
+
+class List{
+    int length
+
+    Add <- function
+}
+
+List<int> my_list = new List<int>();
+my_list.length
+my_list.Add(1)
